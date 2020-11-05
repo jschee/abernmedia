@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "custom.scss";
+@import "fonts";
+
+
+html {
+  @apply font-body;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #3D3D3D
+}
+
+.is-active {padding: 1em; background-color: #E65622; font-weight: 800; color: white;}
+.border-main { border-color: #E65622; }
+.link:hover{color: #E65622;}
+.bg-main { background-color: #E65622; }

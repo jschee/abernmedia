@@ -1,0 +1,34 @@
+{%- assign home_active = "" -%}
+{%- assign work_active = "" -%}
+{%- assign about_active = "" -%}
+{%- assign bts_active = "" -%}
+
+{%- if page.url == "/work/" -%}
+{%- assign work_active = "is-active" -%}
+{%- elsif page.url == "/bts/" -%}
+{%- assign bts_active = "is-active" -%}
+{%- else -%}
+{%- assign home_active = "is-active" -%}
+{%- endif -%}
+
+
+
+<nav class="border-b border-main relative mb-2" style="z-index: 10">
+  <div class="wrapper lg:max-w-5xl mx-auto relative">
+    <ul>
+      <li class="inline-block  mr-2 cursor-pointer {{ home_active }}"><a href="/">HOME</a></li>
+      <li class="inline-block font-gothic mr-2 cursor-pointer {{ work_active }}"><a href="/work">OUR WORK</a></li>
+      <li class="inline-block font-gothic mr-2 cursor-pointer {{ bts_active }}"><a href="/bts">BTS</a></li>
+      <li class="inline-block font-gothic cursor-pointer">CONTACT</li>
+    </ul>
+    <img src="/images/logo.png" alt="abern media logo" class="absolute px-2" style="right: 4%; bottom: -7%; background: white; width: 220px">
+  </div>
+</nav>
+
+
+<style>
+.is-active {padding: 1em; background-color: #E65622; font-weight: 800; color: white;}
+.border-main { border-color: #E65622; }
+.link:hover{color: #E65622;}
+.bg-main { background-color: #E65622; }
+</style>
