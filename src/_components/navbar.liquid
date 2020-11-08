@@ -2,32 +2,54 @@
 {%- assign work_active = "" -%}
 {%- assign about_active = "" -%}
 {%- assign bts_active = "" -%}
+{%- assign contact_active = "" -%}
 
 {%- if page.url == "/work/" -%}
 {%- assign work_active = "is-active" -%}
 {%- elsif page.url == "/bts/" -%}
 {%- assign bts_active = "is-active" -%}
+{%- elsif page.url == "/contact/" -%}
+{%- assign contact_active = "is-active" -%}
 {%- else -%}
 {%- assign home_active = "is-active" -%}
 {%- endif -%}
 
 
 
-<nav class="border-b border-main relative mb-2" style="z-index: 10">
+<nav class="md:border-b border-main relative md:mb-2" style="z-index: 10">
+  <div class="flex justify-center items-center block md:hidden">
+    <img src="/images/logo.png" class="p-2" style="width: 185px">
+  </div>
   <div class="wrapper lg:max-w-5xl mx-auto relative">
-    <ul>
+    <ul class="hidden md:block">
       <li class="inline-block  mr-2 cursor-pointer {{ home_active }}"><a href="/">HOME</a></li>
       <li class="inline-block font-gothic mr-2 cursor-pointer {{ work_active }}"><a href="/work">OUR WORK</a></li>
       <li class="inline-block font-gothic mr-2 cursor-pointer {{ bts_active }}"><a href="/bts">BTS</a></li>
-      <li class="inline-block font-gothic cursor-pointer">CONTACT</li>
+      <li class="inline-block font-gothic cursor-pointer {{ contact_active }}"><a href="/contact">CONTACT</a></li>
     </ul>
-    <img src="/images/logo.png" alt="abern media logo" class="absolute px-2" style="right: 4%; bottom: -7%; background: white; width: 220px">
+    <img src="/images/logo.png" class="hidden md:block absolute px-2" style="right: 4%; bottom: -7%; background: white; width: 220px">
+  </div>
+</nav>
+<nav class="block md:hidden px-2 border-b border-main">
+  <div class="flex justify-center">
+    <ul>
+      <li class="text-xs inline-block  mr-2 cursor-pointer {{ home_active }}"><a href="/">HOME</a></li>
+      <li class="text-xs inline-block font-gothic mr-2 cursor-pointer {{ work_active }}"><a href="/work">OUR WORK</a></li>
+      <li class="text-xs inline-block font-gothic mr-2 cursor-pointer {{ bts_active }}"><a href="/bts">BTS</a></li>
+      <li class="text-xs inline-block font-gothic cursor-pointer {{ contact_active }}"><a href="/contact">CONTACT</a></li>
+    </ul>
   </div>
 </nav>
 
 
 <style>
 .is-active {padding: 1em; background-color: #E65622; font-weight: 800; color: white;}
+
+@media screen and (max-width: 440px) {
+  .is-active {padding: 0.3em; background-color: #E65622; font-weight: 800; color: white;}
+}
+
+
 .border-main { border-color: #E65622; }
 .link:hover{color: #E65622;}
 .bg-main { background-color: #E65622; }
