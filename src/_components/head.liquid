@@ -2,7 +2,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 {% capture page_title %}{{ title | strip_html | strip_newlines }}{% endcapture %}
 <title>{% if page_title != "" %}{{ page_title | escape }}{% endif %}</title>
+<!-- Primary Meta Tags -->
+<meta name="title" content="{{page.title}}">
+<meta name="description" content="A Bernard Media Services is a full range Video Production Company that specializes in producing creative, informational and corporate style videos. Strong content is our passion as we bring your brand to life and tell your story.">
 
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{page.url}}">
+<meta property="og:title" content="{{page.title}}">
+<meta property="og:description" content="A Bernard Media Services is a full range Video Production Company that specializes in producing creative, informational and corporate style videos. Strong content is our passion as we bring your brand to life and tell your story.">
+<meta property="og:image" content="https://abernmedia.com/images/og_image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{page.url}}">
+<meta property="twitter:title" content="{{page.title}}">
+<meta property="twitter:description" content="A Bernard Media Services is a full range Video Production Company that specializes in producing creative, informational and corporate style videos. Strong content is our passion as we bring your brand to life and tell your story.">
+<meta property="twitter:image" content="https://abernmedia.com/images/og_image.jpg">
 <meta name="description" content="{{ metadata.description }}" />
 
 <link rel="stylesheet" href="{% webpack_path css %}" />
