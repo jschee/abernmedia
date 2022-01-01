@@ -46,7 +46,7 @@ title: "Our work | A. Bernard Media Services"
 
 <!-- <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/473456695?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> -->
 
-<div class="wrapper lg:max-w-5xl pt-0 md:pt-8 lg:pt-12 mx-auto relative">
+<div class="wrapper lg:max-w-5xl pt-0 md:pt-8 lg:pt-12 mx-auto relative" data-controller="video">
   <div class="grid grid-cols-2 justify-items-center mt-8" style="max-height: calc(30% - 45px);">
     <button class="video-thumb w-full h-64 focus:outline-none hover:cursor-pointer" data-video="video-2" onclick="openVideoModal(this);">
       <img loading="lazy" class="object-cover h-64 hover:cursor-pointer" src="/images/work/2.png">
@@ -93,8 +93,8 @@ title: "Our work | A. Bernard Media Services"
   <section class="py-5 relative">
     <div class="flex flex-col items-center">
       <small class="text-xl font-gothic text-center p-4 text-white">Panasonic Explorers' Program – May 2018</small>
-      <iframe src="https://player.vimeo.com/video/343037868?title=0&byline=0&loop=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <button data-modal="video-2" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none">Close window</div>
+      <iframe id="iframe-video-2" src="https://player.vimeo.com/video/343037868?title=0&byline=0&loop=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <button data-modal="video-2" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none" onclick="closeVideoModal(this)">Close window</div>
     </div>
   </section>
 </article>
@@ -103,8 +103,8 @@ title: "Our work | A. Bernard Media Services"
   <section class="py-5 relative">
     <div class="flex flex-col items-center">
       <small class="text-xl font-gothic text-center p-4 text-white">Chrystopher Davis: A Newark Street Photographer and Documentarian – Sep 2020</small>
-      <iframe src="https://player.vimeo.com/video/469854545?title=0&byline=0&loop=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div data-modal="video-3" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none">Close window</div>
+      <iframe id="iframe-video-3" src="https://player.vimeo.com/video/469854545?title=0&byline=0&loop=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div data-modal="video-3" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none" onclick="closeVideoModal(this)">Close window</div>
     </div>
   </section>
 </article>
@@ -113,8 +113,8 @@ title: "Our work | A. Bernard Media Services"
   <section class="py-5 relative">
     <div class="flex flex-col items-center">
       <small class="text-xl font-gothic text-center p-4 text-white">Mammoth – Sep 2020</small>
-      <iframe src="https://player.vimeo.com/video/473851260?title=0&byline=0&loop=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div data-modal="video-4" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none">Close window</div>
+      <iframe id="iframe-video-4" src="https://player.vimeo.com/video/473851260?title=0&byline=0&loop=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div data-modal="video-4" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none" onclick="closeVideoModal(this)">Close window</div>
     </div>
   </section>
 </article>
@@ -124,89 +124,89 @@ title: "Our work | A. Bernard Media Services"
   <section class="py-5 relative">
     <div class="flex flex-col items-center">
       <small class="text-xl font-gothic text-center p-4 text-white">Black Poster Project – Aug 2020</small>
-      <iframe src="https://player.vimeo.com/video/447238818?title=0&byline=0&loop=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div data-modal="video-5" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none">Close window</div>
+      <iframe id="iframe-video-5" src="https://player.vimeo.com/video/447238818?title=0&byline=0&loop=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div data-modal="video-5" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none" onclick="closeVideoModal(this)">Close window</div>
     </div>
   </section>
 </article>
 
 
-<article id="video-6" class="absolute bg-black-opacity hidden h-screen" style="top: 8%; bottom: 0; right: 0; left: 0">
+<article id="video-6" class="absolute bg-black-opacity h-screen" style="top: 8%; bottom: 0; right: 0; left: 0; display: none">
   <section class="py-5 relative">
     <div class="flex flex-col items-center">
       <small class="text-xl font-gothic text-center p-4 text-white">NYSED – Oct 2019</small>
-      <iframe src="https://player.vimeo.com/video/470196485" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div data-modal="video-6" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none">Close window</div>
+      <iframe id="iframe-video-6" src="https://player.vimeo.com/video/470196485" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div data-modal="video-6" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none" onclick="closeVideoModal(this)">Close window</div>
     </div>
   </section>
 </article>
 
-<article id="video-7" class="absolute bg-black-opacity hidden h-screen" style="top: 8%; bottom: 0; right: 0; left: 0">
+<article id="video-7" class="absolute bg-black-opacity h-screen" style="top: 8%; bottom: 0; right: 0; left: 0; display: none">
   <section class="py-5 relative">
     <div class="flex flex-col items-center">
       <small class="text-xl font-gothic text-center p-4 text-white">Soundings Surfboards – Jul 2018</small>
-      <iframe src="https://player.vimeo.com/video/473161796?title=0&loop=0&byline=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div data-modal="video-7" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none">Close window</div>
+      <iframe id="iframe-video-7" src="https://player.vimeo.com/video/473161796?title=0&loop=0&byline=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div data-modal="video-7" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none" onclick="closeVideoModal(this)">Close window</div>
     </div>
   </section>
 </article>
 
-<article id="video-8" class="absolute bg-black-opacity hidden h-screen" style="top: 8%; bottom: 0; right: 0; left: 0">
+<article id="video-8" class="absolute bg-black-opacity h-screen" style="top: 8%; bottom: 0; right: 0; left: 0; display: none">
   <section class="py-5 relative">
     <div class="flex flex-col items-center">
       <small class="text-xl font-gothic text-center p-4 text-white">West Ed – Jun 2018</small>
-      <iframe src="https://player.vimeo.com/video/470193571?title=0&loop=0&byline=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div data-modal="video-8" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none">Close window</div>
+      <iframe id="iframe-video-8" src="https://player.vimeo.com/video/470193571?title=0&loop=0&byline=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div data-modal="video-8" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none" onclick="closeVideoModal(this)">Close window</div>
     </div>
   </section>
 </article>
 
-<article id="video-9" class="absolute bg-black-opacity hidden h-screen" style="top: 8%; bottom: 0; right: 0; left: 0">
+<article id="video-9" class="absolute bg-black-opacity h-screen" style="top: 8%; bottom: 0; right: 0; left: 0; display: none">
   <section class="py-5 relative">
     <div class="flex flex-col items-center">
       <small class="text-xl font-gothic text-center p-4 text-white">ISN Recap – May 2018</small>
-      <iframe src="https://player.vimeo.com/video/382645825?title=0&loop=0&byline=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div data-modal="video-9" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none">Close window</div>
+      <iframe id="iframe-video-9" src="https://player.vimeo.com/video/382645825?title=0&loop=0&byline=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div data-modal="video-9" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none" onclick="closeVideoModal(this)">Close window</div>
     </div>
   </section>
 </article>
 
-<article id="video-10" class="absolute bg-black-opacity hidden h-screen" style="top: 8%; bottom: 0; right: 0; left: 0">
+<article id="video-10" class="absolute bg-black-opacity h-screen" style="top: 8%; bottom: 0; right: 0; left: 0; display: none">
   <section class="py-5 relative">
     <div class="flex flex-col items-center">
       <small class="text-xl font-gothic text-center p-4 text-white">BASF Suppliers Day – Apr 2018</small>
-      <iframe src="https://player.vimeo.com/video/336891925?title=0&loop=0&byline=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div data-modal="video-10" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none">Close window</div>
+      <iframe id="iframe-video-10" src="https://player.vimeo.com/video/336891925?title=0&loop=0&byline=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div data-modal="video-10" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none" onclick="closeVideoModal(this)">Close window</div>
     </div>
   </section>
 </article>
 
-<article id="video-11" class="absolute bg-black-opacity hidden h-screen" style="top: 8%; bottom: 0; right: 0; left: 0">
+<article id="video-11" class="absolute bg-black-opacity h-screen" style="top: 8%; bottom: 0; right: 0; left: 0; display: none">
   <section class="py-5 relative">
     <div class="flex flex-col items-center">
       <small class="text-xl font-gothic text-center p-4 text-white">Maven</small>
-      <iframe src="https://player.vimeo.com/video/500017009?title=0&loop=0&byline=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div data-modal="video-11" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none">Close window</div>
+      <iframe id="iframe-video-11" src="https://player.vimeo.com/video/500017009?title=0&loop=0&byline=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div data-modal="video-11" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none" onclick="closeVideoModal(this)">Close window</div>
     </div>
   </section>
 </article>
 
-<article id="video-12" class="absolute bg-black-opacity hidden h-screen" style="top: 8%; bottom: 0; right: 0; left: 0">
+<article id="video-12" class="absolute bg-black-opacity h-screen" style="top: 8%; bottom: 0; right: 0; left: 0; display: none">
   <section class="py-5 relative">
     <div class="flex flex-col items-center">
       <small class="text-xl font-gothic text-center p-4 text-white">Poetry with Sophia</small>
-      <iframe src="https://player.vimeo.com/video/500020563?title=0&loop=0&byline=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div data-modal="video-12" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none">Close window</div>
+      <iframe id="iframe-video-12" src="https://player.vimeo.com/video/500020563?title=0&loop=0&byline=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div data-modal="video-12" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none" onclick="closeVideoModal(this)">Close window</div>
     </div>
   </section>
 </article>
 
-<article id="video-13" class="absolute bg-black-opacity hidden h-screen" style="top: 8%; bottom: 0; right: 0; left: 0">
+<article id="video-13" class="absolute bg-black-opacity h-screen" style="top: 8%; bottom: 0; right: 0; left: 0; display: none">
   <section class="py-5 relative">
     <div class="flex flex-col items-center">
       <small class="text-xl font-gothic text-center p-4 text-white">Painting with Ginwah</small>
-      <iframe src="https://player.vimeo.com/video/500023152?title=0&loop=0&byline=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div data-modal="video-13" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none">Close window</div>
+      <iframe id="iframe-video-13" src="https://player.vimeo.com/video/500023152?title=0&loop=0&byline=0&portrait=0" width="640" height="360" frameborder="1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <div data-modal="video-13" class="hover:cursor-pointer close-modal mt-4 text-white text-md font-gothic-bold focus:outline-none" onclick="closeVideoModal(this)">Close window</div>
     </div>
   </section>
 </article>
@@ -214,7 +214,7 @@ title: "Our work | A. Bernard Media Services"
 
 
 
-
+<script src="https://player.vimeo.com/api/player.js"></script>
 <script>
   var thumbs = document.querySelectorAll(".video-thumb")
 
@@ -227,22 +227,20 @@ title: "Our work | A. Bernard Media Services"
     })
   });
 
-  var closes = document.querySelectorAll(".close-modal");
-  closes.forEach(function (close){
-    close.addEventListener('click', function () {
-      var id = this.dataset.modal;
-      var modal = document.getElementById(id);
-      modal.remove();
-    })
-  });
+
+  function closeVideoModal(e) {
+    var iframe = document.getElementById("iframe-" + e.dataset.modal)
+    const player = new Vimeo.Player(iframe);
+    var selector = e.dataset.modal
+    var video = document.getElementById(selector);
+    player.unload()
+    video.style.display = "none";
+  }
 
   function openVideoModal (e) {
     var selector = e.dataset.video;
     var video = document.getElementById(selector);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    video.classList.remove("hidden");
+    video.style.display = "block";
   }
-
-
-
 </script>
